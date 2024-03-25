@@ -1,12 +1,6 @@
 import React from "react";
 import birds from "../assets/Birds.png";
 import styles from "./Primaryutil.module.css";
-import water from "../assets/water.png";
-import tower from "../assets/tower.png";
-import supply from "../assets/supply.png";
-import cctv from "../assets/cctv.png";
-import car from "../assets/parked-car.png";
-import dest from "../assets/destination.png";
 
 const Primaryutil = () => {
   const utilData = [
@@ -37,20 +31,20 @@ const Primaryutil = () => {
   ];
   return (
     <>
-    <img src={birds} className={styles.birdImg}></img>
-    <div className={styles.primaryUtil}>
-      <h1>Primary Utilities</h1>
-      <div className={styles.utilities}>
-        {utilData.map((item) => (
-          <div className={styles.utilInfo}>
-            <div className={styles.utilImg}>
-              <img src={item.img}></img>
+      <img src={birds} className={styles.birdImg}></img>
+      <div className={styles.primaryUtil}>
+        <h1>Primary Utilities</h1>
+        <div className={styles.utilities}>
+          {utilData.map((item) => (
+            <div className={styles.utilInfo}>
+              <div className={styles.utilImg}>
+                <img src={item.img}></img>
+              </div>
+              <h4>{item.txt}</h4>
             </div>
-            <h4>{item.txt}</h4>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
     </>
   );
 };
