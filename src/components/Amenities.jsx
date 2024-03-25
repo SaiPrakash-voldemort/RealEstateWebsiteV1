@@ -1,13 +1,6 @@
 import React from "react";
 import styles from "./Amenities.module.css";
-import clubHouse from "../assets/ClubHouse.jpg";
-import garden from "../assets/garden.jpg";
-import gym from "../assets/Gym.jpg";
-import paths from "../assets/paths.jpg";
-import playArea from "../assets/playArea.jpg";
-import plaza from "../assets/plaza.jpg";
-import sundeck from "../assets/Sundeck.jpg";
-import pool from "../assets/Pool.jpg";
+
 const Amenities = () => {
   const amenitiesImages = [
     {
