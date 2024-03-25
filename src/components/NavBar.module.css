@@ -1,0 +1,96 @@
+* {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.navbarContainer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 5px;
+}
+.navElements {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+.navElements a {
+  color: rgb(74, 28, 116);
+  font-weight: bold;
+  text-decoration: none;
+}
+.logo {
+  color: rgb(74, 28, 116);
+}
+.navElements li {
+  color: black;
+  margin: 20px;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 10px;
+}
+.navElements li:hover {
+  color: white;
+  background-color: rgb(74, 28, 116);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  transition: 0.8s ease-out;
+}
+
+.navElements a:hover {
+  color: white;
+  transition: 0.1s ease-out;
+}
+.call {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+.call img {
+  height: 40px;
+  width: 40px;
+}
+.callInfo h4 {
+  font-weight: lighter;
+}
+.callInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.nav-btn {
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--textColor);
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.8rem;
+}
+@media screen and (max-width: 903px) {
+  .navbarContainer {
+    padding: 5px;
+    gap: 2px;
+  }
+  .navElements {
+    width: 100vw;
+    flex-wrap: wrap;
+  }
+  .nav-btn {
+    visibility: visible;
+    opacity: 1;
+  }
+  .responsive_nav {
+    transform: translateY(100vh);
+  }
+  .nav-close-btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+}

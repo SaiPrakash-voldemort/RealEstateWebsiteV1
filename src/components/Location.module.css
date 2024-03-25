@@ -1,0 +1,136 @@
+.location {
+  background-image: url("../assets/amenitiesBG.jpg");
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  border-top-right-radius: 300px;
+}
+.locationInfo {
+  text-align: center;
+}
+.locationInfo h1 {
+  font-family: heading;
+  color: rgb(74, 28, 116);
+  font-weight: bolder;
+
+  padding: 8px;
+  margin: 5px;
+  font-size: 4rem;
+}
+.locationInfo h2 {
+  padding: 8px;
+
+  margin: 5px;
+  padding: 15px;
+  font-size: 2rem;
+}
+.locationInfo p {
+  text-align: center;
+  padding: 8px;
+  font-size: 1.5rem;
+  margin: 5px;
+  padding: 15px;
+}
+.elevationTxt h3 {
+  font-size: 40px;
+}
+.elevationTxt ul li {
+  list-style: none;
+  font-size: 25px;
+  margin: 10px;
+  padding: 10px;
+}
+.locationMap {
+  margin: 30px;
+  padding: 50px;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.elevationTxt {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  margin: 10px;
+  padding: 30px;
+  border-radius: 20px;
+}
+iframe {
+  border: none;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+@media screen and (max-width: 600px) {
+  .location {
+    border-top-right-radius: 50px;
+  }
+  .elevationTxt h3 {
+    font-size: 30px;
+  }
+  .locationInfo h1 {
+    font-family: heading;
+    color: rgb(74, 28, 116);
+    font-weight: bolder;
+
+    padding: 8px;
+    margin: 5px;
+    font-size: 3.5rem;
+  }
+  .locationInfo h2 {
+    padding: 8px;
+
+    margin: 5px;
+    padding: 15px;
+    font-size: 1.5rem;
+  }
+  .locationInfo p {
+    text-align: center;
+    padding: 8px;
+    font-size: 1.3rem;
+    margin: 5px;
+    padding: 15px;
+  }
+  .elevationTxt {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+      rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+  .elevationTxt h3 {
+    font-size: 1.4rem;
+  }
+  .elevationTxt ul li {
+    list-style: none;
+    font-size: 1.4rem;
+    margin: 10px;
+    padding: 10px;
+  }
+  iframe {
+    border: none;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+      rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    height: 300px;
+  }
+
+  #map-id {
+    width: 50px;
+  }
+}

@@ -1,0 +1,102 @@
+.overview {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: rgb(129, 202, 230);
+  height: 100vh;
+}
+.grassBg {
+  background-image: url("../assets/grass.png");
+  position: relative;
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bird {
+  height: 124px;
+  width: 283px;
+  position: relative;
+  top: 50px;
+  opacity: 0.9;
+}
+.girl {
+  position: relative;
+  right: 0px;
+  opacity: 0.9;
+  bottom: 191px;
+  left: 573px;
+}
+.overviewTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border-radius: 20px;
+  padding: 20px;
+}
+.overviewTitle h1 {
+  font-family: heading;
+  color: rgb(74, 28, 116);
+  font-weight: bolder;
+  padding: 5px;
+  font-size: 4rem;
+}
+.overviewTitle h2 {
+  text-align: center;
+  margin-top: 5px;
+  font-size: 2rem;
+}
+.overviewTitle h4 {
+  margin-top: 5px;
+  font-size: 1.5rem;
+}
+.overviewInfo {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border-radius: 20px;
+  font-size: 1.5rem;
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  background: transparent;
+  backdrop-filter: blur(20px);
+  padding: 30px;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .overviewInfo {
+    width: 90vw;
+    font-size: 20px;
+  }
+  .bird {
+    height: 80px;
+    width: 203px;
+    position: relative;
+    top: 16px;
+    opacity: 0.9;
+  }
+  .overviewTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+      rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px;
+  }
+}

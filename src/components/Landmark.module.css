@@ -1,0 +1,137 @@
+.landmark {
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  justify-content: center;
+}
+.landmark h1 {
+  font-family: heading;
+  font-weight: bolder;
+  color: rgb(74, 28, 116);
+  text-align: center;
+  font-size: 4rem;
+  margin: 5px;
+  padding: 10px;
+}
+.landmarkImg {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+.landmarkMainImg {
+  height: 600px;
+  width: 700px;
+}
+.businessMan {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  height: 20px;
+  width: 20px;
+  margin: 2px;
+  padding: px;
+  border-radius: 10px;
+}
+
+.circle {
+  position: absolute;
+  height: 20px;
+  width: 50px;
+  top: 203px;
+  left: 256px;
+}
+.mall {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  bottom: 196px;
+  left: 275px;
+}
+
+.hospital {
+  position: absolute;
+  height: 44px;
+  width: 44px;
+  bottom: 207px;
+  right: 261px;
+}
+
+.institute {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  bottom: 114px;
+  left: 377px;
+}
+.underground {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  height: 45px;
+  width: 45px;
+  top: 111px;
+  right: 374px;
+}
+.union {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  right: 27%;
+  top: 32%;
+}
+
+.classroom {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  bottom: 113px;
+  left: 503px;
+}
+.landmarkCard {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  padding: 20px;
+  border-radius: 25% 75% 25% 75% / 25% 37% 22% 48%;
+  gap: 5px;
+  height: 184px;
+  width: 300px;
+}
+.landmarkCardIcon {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-around;
+}
+.landmarkCard ul {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.landmarkCard ul li {
+  list-style: none;
+}
+
+@media screen and (max-width: 600px) {
+  .landmark h1 {
+    font-size: 3.5rem;
+  }
+  .landmarkImg {
+    width: 93vw;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .landmarkCardIcon h2 {
+    font-size: 1.2rem;
+  }
+}
