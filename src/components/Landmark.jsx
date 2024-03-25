@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./Landmark.module.css";
-import landmark from "../assets/landmark.png";
 const Landmark = () => {
   return (
     <>
